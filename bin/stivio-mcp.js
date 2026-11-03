@@ -8,7 +8,7 @@ import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/
 const HELP = `stivio-mcp - connect any stdio MCP client to the hosted Stivio server
 
 Usage:
-  STIVIO_API_KEY=<key> npx -y stivio-mcp
+  STIVIO_API_KEY=<key> npx -y github:wsmhj/stivio-mcp
 
 Environment:
   STIVIO_API_KEY   Personal key from https://stivio.ai/mcp. Without it, only
