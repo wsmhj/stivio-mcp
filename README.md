@@ -101,6 +101,7 @@ curl https://stivio.ai/api/upload \
 - MCP setup and keys: [stivio.ai/mcp](https://stivio.ai/mcp)
 - Image to video in the browser: [stivio.ai/studio](https://stivio.ai/studio)
 - Pricing: [stivio.ai/#pricing](https://stivio.ai/#pricing)
+- Before and after examples: [Hugging Face Space](https://huggingface.co/spaces/cvbnbv12/stivio-image-to-video)
 - Support: hello@stivio.ai
 
 The docs and examples in this repo are MIT licensed.
