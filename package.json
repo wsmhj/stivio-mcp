@@ -1,0 +1,17 @@
+{
+  "name": "stivio-mcp",
+  "version": "1.0.0",
+  "description": "Stivio image-to-video MCP server for Claude, Cursor and any stdio MCP client (bridge to the hosted server)",
+  "type": "module",
+  "bin": { "stivio-mcp": "bin/stivio-mcp.js" },
+  "files": ["bin", "README.md", "LICENSE", "server.json"],
+  "engines": { "node": ">=18" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.32.2" },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "image-to-video", "ai-video", "video-generation", "stivio"],
+  "homepage": "https://stivio.ai/mcp",
+  "repository": { "type": "git", "url": "git+https://github.com/wsmhj/stivio-mcp.git" },
+  "bugs": { "url": "https://github.com/wsmhj/stivio-mcp/issues" },
+  "author": "Stivio <hello@stivio.ai> (https://stivio.ai)",
+  "license": "MIT",
+  "mcpName": "io.github.wsmhj/stivio-mcp"
+}

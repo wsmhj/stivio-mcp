@@ -6,7 +6,7 @@ Turn a photo into a short AI video from inside your AI client. This repo holds s
 - Auth: `Authorization: Bearer <key>`, key from [stivio.ai/mcp](https://stivio.ai/mcp)
 - Official MCP Registry: `io.github.wsmhj/stivio-mcp`
 
-The server is hosted; there is nothing to install or run locally. The server code itself is not in this repo.
+The server is hosted, so most clients connect to the URL directly. For clients that only run local commands there is a small stdio bridge on npm (`npx stivio-mcp`, source in [bin/](bin/)). The server code itself is not in this repo.
 
 ## Tools
 
@@ -54,6 +54,24 @@ claude mcp add --transport http stivio https://stivio.ai/api/mcp \
 ### VS Code
 
 `.vscode/mcp.json`; VS Code asks for the key once and stores it. See [examples/vscode-mcp.json](examples/vscode-mcp.json).
+
+### Claude Desktop and other stdio-only clients
+
+Clients that only launch local commands can use the `stivio-mcp` npm package, a small bridge that forwards everything to the hosted server (Node.js 18+):
+
+```json
+{
+  "mcpServers": {
+    "stivio": {
+      "command": "npx",
+      "args": ["-y", "stivio-mcp"],
+      "env": { "STIVIO_API_KEY": "YOUR_STIVIO_KEY" }
+    }
+  }
+}
+```
+
+Without `STIVIO_API_KEY` the bridge still lists models and gives quotes.
 
 ### Other clients
 
