@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.wsmhj/stivio-mcp",
+  "description": "Stivio MCP server - AI image-to-video generator via MCP.",
+  "version": "1.0.1",
+  "websiteUrl": "https://stivio.ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://stivio.ai/api/mcp"
+    }
+  ]
+}

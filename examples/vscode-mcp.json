@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "stivio": {
+      "type": "http",
+      "url": "https://stivio.ai/api/mcp",
+      "headers": { "Authorization": "Bearer ${input:stivio-key}" }
+    }
+  },
+  "inputs": [
+    { "id": "stivio-key", "type": "promptString", "description": "Stivio key from https://stivio.ai/mcp", "password": true }
+  ]
+}

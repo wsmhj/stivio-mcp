@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "stivio": {
+      "url": "https://stivio.ai/api/mcp",
+      "headers": { "Authorization": "Bearer YOUR_STIVIO_KEY" }
+    }
+  }
+}
